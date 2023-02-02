@@ -15,6 +15,7 @@ variables:
   containerRegistry: 'emineacr.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '182'
+  release: '182'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -39,6 +40,7 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
+          $(release)
     
     - task: DockerCompose@0
       inputs:
