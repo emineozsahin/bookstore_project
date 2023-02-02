@@ -14,7 +14,7 @@ variables:
   imageRepository: '620bef75a214/bookstoreapi'
   containerRegistry: 'emineacr.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
-  tag: 'latest'
+  tag: '182'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
